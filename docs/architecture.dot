@@ -1,0 +1,17 @@
+digraph "kodros-moa-architecture architecture" {
+  rankdir=TB; bgcolor="white"; pad=0.3; nodesep=0.45; ranksep=0.7;
+  node [shape=box, style="rounded,filled", fillcolor="#f6f6f8", color="#c9c9d1", fontname="Helvetica,Arial,sans-serif", fontsize=12, fontcolor="#1b1b1f", margin="0.18,0.1", penwidth=1.4];
+  edge [color="#5c5c66", fontname="Helvetica,Arial,sans-serif", fontsize=10, fontcolor="#5c5c66", arrowsize=0.8];
+  owner [label="Owner"];
+  coord [label="Coordinator\none accountable agent", color="#c2410c", penwidth=2.2, fillcolor="#fff7ed"];
+  moa [label="MoA advisors\nadvise, never act"];
+  roles [label="Specialist roles\ndesign pattern"];
+  vault [label="Vault and graph\nprivate, not published"];
+  gate [label="Approval gate L0 to L3\ndesign"];
+  owner -> coord [label="request"];
+  coord -> moa [label="asks advice"];
+  coord -> roles [label="delegates"];
+  coord -> vault [label="recall"];
+  coord -> gate [label="side effects"];
+  gate -> owner [label="asks yes", style="dashed"];
+}
