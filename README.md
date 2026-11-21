@@ -4,11 +4,11 @@ A written reference for engineers who design multi-agent systems that keep one a
 
 Part of the [Kodros](https://kodros.ai) agent tooling. Documentation only: there is no code, no configuration and nothing to install or run.
 
-## On your hardware
+## On your computer
 
 - Does: nothing on its own. It is a design reference.
-- Needs: no hardware. Any Markdown viewer and a browser that renders Mermaid (GitHub does).
-- On-prem: the design is local-first. Data and inference stay on local hardware where practical, and only the minimum context goes to an approved cloud model when one is used. The document describes this. It does not enforce it, because no code ships here.
+- Needs: no special computer. Any Markdown viewer and a browser that renders Mermaid (GitHub does).
+- On-prem: the design is local-first. Data and inference stay on local computers where practical, and only the minimum context goes to an approved cloud model when one is used. The document describes this. It does not enforce it, because no code ships here.
 
 ## What is implemented and what is design
 
